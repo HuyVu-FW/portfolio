@@ -1,46 +1,117 @@
-# Getting Started with Create React App
+# Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Một trang portfolio cá nhân hiện đại được xây dựng bằng React, TypeScript và các công nghệ web hiện đại.
 
-## Available Scripts
+## Tính năng
 
-In the project directory, you can run:
+- Thiết kế responsive và hiện đại
+- Animation mượt mà với Framer Motion
+- Routing với React Router
+- Styling với Styled Components
+- TypeScript cho type safety
+- Tối ưu hiệu suất
+- Menu mobile thông minh
+- Các hiệu ứng hover đẹp mắt
+- Thanh tiến trình animation
+- Timeline với animation
+- Card dự án với hiệu ứng hover
 
-### `npm start`
+## Cấu trúc dự án
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+portfolio/
+├── public/
+│   └── images/         # Hình ảnh tĩnh
+├── src/
+│   ├── components/     # React components
+│   │   ├── Navbar.tsx
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── Story.tsx
+│   │   ├── Skills.tsx
+│   │   └── Projects.tsx
+│   ├── App.tsx        # Component chính
+│   └── index.tsx      # Entry point
+└── package.json       # Dependencies
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Cài đặt
 
-### `npm test`
+1. Clone repository:
+```bash
+git clone <repository-url>
+cd portfolio
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Cài đặt dependencies:
+```bash
+npm install
+```
 
-### `npm run build`
+3. Chạy dự án:
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Build cho production:
+```bash
+npm run build
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Công nghệ sử dụng
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React
+- TypeScript
+- React Router
+- Framer Motion
+- Styled Components
 
-### `npm run eject`
+## Tùy chỉnh
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Thay đổi nội dung trong các components
+2. Thêm/sửa/xóa các sections trong `App.tsx`
+3. Tùy chỉnh styles trong các styled components
+4. Thêm hình ảnh vào thư mục `public/images`
+5. Điều chỉnh màu sắc và font chữ trong `index.css`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Cấu trúc Components
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Navbar
+- Menu navigation với animation
+- Responsive design
+- Hiệu ứng scroll
+- Menu mobile
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Hero
+- Giới thiệu ngắn gọn
+- Animation mượt mà
+- Các role badges
+- Nút scroll
 
-## Learn More
+### About
+- Thông tin chi tiết
+- Hình ảnh với hiệu ứng
+- Thống kê số liệu
+- Animation khi scroll
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Story
+- Timeline với animation
+- Responsive design
+- Hiệu ứng hover
+- Gradient line
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Skills
+- Thanh tiến trình animation
+- Phân loại kỹ năng
+- Hiệu ứng hover
+- Gradient progress bar
+
+### Projects
+- Card dự án với animation
+- Hình ảnh với hiệu ứng
+- Tags công nghệ
+- Link đến dự án
+
+## License
+
+MIT
