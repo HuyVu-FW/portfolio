@@ -4,7 +4,7 @@ import { motion, useDragControls } from 'framer-motion';
 
 const CatContainer = styled(motion.div)`
   position: fixed;
-  bottom: 20px;
+  bottom: 100px;
   right: 20px;
   z-index: 1000;
   cursor: grab;
@@ -105,7 +105,7 @@ const CuteCat: React.FC = () => {
         bottom: window.innerHeight - 60
       }}
     >
-      <CatImage src="/images/cute-cat.png" alt="Cute Cat" />
+      <CatImage src="img/cat.png" alt="Cute Cat" />
       <SoundIcon
         animate={{
           scale: isPlaying ? [1, 1.2, 1] : 1,

@@ -160,26 +160,26 @@ const ProjectLink = styled(motion.a)`
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: 'E-commerce Website',
-      description: 'Một trang web thương mại điện tử được xây dựng bằng React và Node.js, với các tính năng như giỏ hàng, thanh toán và quản lý đơn hàng.',
-      image: '/project1.jpg',
-      tags: ['React', 'Node.js', 'MongoDB', 'Express'],
-      link: 'https://project1.com'
-    },
-    {
-      title: 'Portfolio Website',
-      description: 'Trang portfolio cá nhân với thiết kế hiện đại và các animation mượt mà, được xây dựng bằng React và Framer Motion.',
-      image: '/project2.jpg',
-      tags: ['React', 'TypeScript', 'Framer Motion', 'Styled Components'],
-      link: 'https://project2.com'
-    },
-    {
       title: 'Leather Craft Shop',
       description: 'Website bán hàng cho cửa hàng thủ công da thuộc, với các tính năng như hiển thị sản phẩm, đặt hàng và blog.',
       image: '/project3.jpg',
       tags: ['Next.js', 'Stripe', 'Tailwind CSS', 'Sanity.io'],
       link: 'https://project3.com'
-    }
+    },
+    {
+      title: 'MoveCare',
+      description: 'Một trang web quản lý và kết nối nhân sự giúp việc',
+      image: 'img/movecare.png',
+      tags: ['React', 'NextJS', 'Python', 'Django'],
+      link: 'https://movecare.vercel.app/'
+    },
+    {
+      title: 'Portfolio Website',
+      description: 'Trang portfolio cá nhân với thiết kế hiện đại và các animation mượt mà, được xây dựng bằng React và Framer Motion.',
+      image: 'img/portfolio.png',
+      tags: ['React', 'TypeScript',],
+      link: 'https://huyvu.space'
+    },
   ];
 
   const containerVariants = {

@@ -234,7 +234,7 @@ const Hero: React.FC = () => {
               ease: "easeInOut"
             }}
           >
-            <HeroImage src="/images/hero.jpg" alt="Hero" />
+            <HeroImage src="/img/cat.png" alt="Hero" />
           </motion.div>
         </ImageContainer>
       </HeroContainer>

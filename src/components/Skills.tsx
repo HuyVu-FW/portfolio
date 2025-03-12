@@ -91,41 +91,30 @@ const Skills: React.FC = () => {
   const t = translations[language];
 
   const skills = [
-    {
-      icon: '💻',
-      title: t.skills.frontend.title,
-      description: t.skills.frontend.description,
-      technologies: ['React', 'Next.js', 'React Native', 'TypeScript', 'Tailwind CSS']
-    },
+
     {
       icon: '⚙️',
       title: t.skills.backend.title,
       description: t.skills.backend.description,
-      technologies: ['Java', 'Spring Boot', 'Django', 'Node.js', 'Express']
+      technologies: ['Java', 'Spring Boot', 'Django', 'Restframework',]
     },
     {
-      icon: '🎨',
-      title: t.skills.design.title,
-      description: t.skills.design.description,
-      technologies: ['Figma', 'Adobe XD', 'UI/UX Design', 'Responsive Design']
-    },
-    {
-      icon: '📱',
-      title: t.skills.mobile.title,
-      description: t.skills.mobile.description,
-      technologies: ['React Native', 'Flutter', 'Mobile UI/UX', 'Cross-platform']
+      icon: '💻',
+      title: t.skills.frontend.title,
+      description: t.skills.frontend.description,
+      technologies: ['React', 'Next.js', 'React Native', 'TypeScript', 'BootStrap']
     },
     {
       icon: '🛠️',
       title: t.skills.tools.title,
       description: t.skills.tools.description,
-      technologies: ['Git', 'Docker', 'AWS', 'CI/CD', 'Agile']
+      technologies: ['Git', 'Docker', 'CI/CD', 'AWS', 'Heroku']
     },
     {
       icon: '📊',
       title: t.skills.database.title,
       description: t.skills.database.description,
-      technologies: ['MySQL', 'PostgreSQL', 'MongoDB', 'Redis', 'SQLite']
+      technologies: ['MSSQL','MySQL','MongoDB', 'SQLite', 'H2']
     }
   ];
 

@@ -10,11 +10,11 @@ export const translations = {
     },
     hero: {
       greeting: 'Xin chào, tôi là',
-      name: 'Nguyen Van A',
+      name: 'Vũ Quang Huy',
       roles: {
-        developer: 'Full Stack Developer',
+        developer: 'Lập trình viên',
         teacher: 'Giảng viên',
-        artisan: 'Nghệ nhân da'
+        artisan: 'Thợ da thủ công'
       },
       description: 'Tôi tạo ra các ứng dụng web hiện đại và trải nghiệm người dùng tuyệt vời'
     },
@@ -35,7 +35,7 @@ export const translations = {
         description: 'Với niềm đam mê chia sẻ kiến thức, tôi giảng dạy về lập trình và công nghệ thông tin. Tôi giúp học viên phát triển kỹ năng thực tế và tư duy giải quyết vấn đề.',
         skills: {
           technical: 'Lập trình, Công nghệ',
-          soft: 'Giao tiếp, Lãnh đạo',
+          soft: 'Giao tiếp, Làm việc nhóm, Lên kế hoạch, Thuyết Trình',
           methodology: 'Phương pháp giảng dạy'
         }
       },
@@ -44,8 +44,8 @@ export const translations = {
         description: 'Bên cạnh công việc lập trình, tôi còn là một nghệ nhân da với niềm đam mê tạo ra các sản phẩm thủ công độc đáo. Tôi kết hợp kỹ thuật truyền thống với thiết kế hiện đại.',
         skills: {
           design: 'Thiết kế sản phẩm',
-          crafting: 'Kỹ thuật đóng da',
-          quality: 'Kiểm soát chất lượng'
+          crafting: 'Kỹ thuật cắt, dán, may',
+          quality: 'Kiểm soát chất lượng sản phẩm'
         }
       }
     },
@@ -96,9 +96,9 @@ export const translations = {
     },
     hero: {
       greeting: 'Hi, I am',
-      name: 'Nguyen Van A',
+      name: 'Vu Quang Huy',
       roles: {
-        developer: 'Full Stack Developer',
+        developer: 'Developer',
         teacher: 'Teacher',
         artisan: 'Leather Artisan'
       },
