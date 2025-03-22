@@ -13,10 +13,10 @@ export const translations = {
       name: 'Vũ Quang Huy',
       roles: {
         developer: 'Lập trình viên',
-        teacher: 'Giảng viên',
+        teacher: 'Giáo viên',
         artisan: 'Thợ da thủ công'
       },
-      description: 'Tôi tạo ra các ứng dụng web hiện đại và trải nghiệm người dùng tuyệt vời'
+      description: '"Có lẽ ngày mai trời sẽ nắng, hãy cố gắng thêm một chút nữa"'
     },
     about: {
       title: 'Giới thiệu',
@@ -25,13 +25,13 @@ export const translations = {
         description: 'Tôi là một lập trình viên Full Stack với kinh nghiệm trong việc phát triển các ứng dụng web hiện đại. Tôi sử dụng các công nghệ mới nhất để tạo ra các giải pháp hiệu quả và bảo mật.',
         skills: {
           frontend: 'React, Next.js, TypeScript',
-          backend: 'Node.js, Java Spring Boot',
-          mobile: 'React Native, Flutter',
+          backend: 'Java, Spring Boot,Python, Django',
+          mobile: 'React Native',
           tools: 'Git, Docker, AWS'
         }
       },
       teaching: {
-        title: 'Giảng viên',
+        title: 'Giáo viên',
         description: 'Với niềm đam mê chia sẻ kiến thức, tôi giảng dạy về lập trình và công nghệ thông tin. Tôi giúp học viên phát triển kỹ năng thực tế và tư duy giải quyết vấn đề.',
         skills: {
           technical: 'Lập trình, Công nghệ',
@@ -102,7 +102,7 @@ export const translations = {
         teacher: 'Teacher',
         artisan: 'Leather Artisan'
       },
-      description: 'I create modern web applications and great user experiences'
+      description: '"Maybe tomorrow it will be sunny, try a little harder."'
     },
     about: {
       title: 'About',
@@ -111,9 +111,9 @@ export const translations = {
         description: 'I am a Full Stack Developer with experience in building modern web applications. I use the latest technologies to create efficient and secure solutions.',
         skills: {
           frontend: 'React, Next.js, TypeScript',
-          backend: 'Node.js, Java Spring Boot',
-          mobile: 'React Native, Flutter',
-          tools: 'Git, Docker, AWS'
+          backend: 'Java, Spring Boot,Python, Django',
+          mobile: 'React Native',
+          tools: 'Git, Github, Docker, AWS'
         }
       },
       teaching: {

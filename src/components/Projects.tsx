@@ -162,9 +162,9 @@ const Projects: React.FC = () => {
     {
       title: 'Leather Craft Shop',
       description: 'Website bán hàng cho cửa hàng thủ công da thuộc, với các tính năng như hiển thị sản phẩm, đặt hàng và blog.',
-      image: '/project3.jpg',
-      tags: ['Next.js', 'Stripe', 'Tailwind CSS', 'Sanity.io'],
-      link: 'https://project3.com'
+      image: 'img/leathershop.png',
+      tags: ['SpringBoot', 'React', 'MaterialUI',],
+      link: 'https://github.com/HuyVu-FW/LeatherWeb'
     },
     {
       title: 'MoveCare',

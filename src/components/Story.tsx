@@ -85,22 +85,22 @@ const Content = styled.div`
 const Story: React.FC = () => {
   const timelineData = [
     {
-      year: '2020',
+      year: '2022',
       position: 'left' as const,
       content: 'Bắt đầu hành trình lập trình với niềm đam mê và tinh thần học hỏi không ngừng.'
     },
     {
-      year: '2021',
-      position: 'right' as const,
-      content: 'Phát triển kỹ năng chuyên môn và tham gia các dự án thực tế.'
-    },
-    {
-      year: '2022',
-      position: 'left' as const,
-      content: 'Mở rộng kiến thức về web development và bắt đầu chia sẻ kinh nghiệm qua blog.'
-    },
-    {
       year: '2023',
+      position: 'right' as const,
+      content: 'Phát triển kỹ năng chuyên môn và tham gia các dự án thực tế và bắt đầu chia sẻ kinh nghiệm của mình qua việc giảng dạy'
+    },
+    {
+      year: '2024',
+      position: 'left' as const,
+      content: 'Mở rộng kiến thức về web development và trải nghiệm thêm về lĩnh vực đồ da thủ công'
+    },
+    {
+      year: '2025',
       position: 'right' as const,
       content: 'Tiếp tục phát triển và đóng góp cho cộng đồng lập trình.'
     }

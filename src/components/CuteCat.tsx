@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
-import { motion, useDragControls } from 'framer-motion';
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
+import { motion, useDragControls } from "framer-motion";
 
 const CatContainer = styled(motion.div)`
   position: fixed;
@@ -37,7 +37,7 @@ const SoundIcon = styled(motion.div)`
   right: -10px;
   width: 20px;
   height: 20px;
-  background: ${props => props.theme.colors.primary};
+  background: ${({ theme }) => theme.colors.primary || "blue"};
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -51,27 +51,26 @@ const CuteCat: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [audio] = useState(new Audio());
   const [currentHour] = useState(new Date().getHours());
+  const [screenSize, setScreenSize] = useState({ width: window.innerWidth, height: window.innerHeight });
   const dragControls = useDragControls();
 
   useEffect(() => {
-    // Chọn nhạc dựa vào thời gian
-    if (currentHour >= 6 && currentHour < 18) {
-      // Nhạc sáng (6h - 17h59)
-      audio.src = '/sounds/morning.mp3';
-    } else {
-      // Nhạc đêm (18h - 5h59)
-      audio.src = '/sounds/night.mp3';
-    }
+    // Cập nhật kích thước màn hình khi resize
+    const updateSize = () => setScreenSize({ width: window.innerWidth, height: window.innerHeight });
+    window.addEventListener("resize", updateSize);
 
+    // Chọn nhạc dựa vào thời gian
+    audio.src = currentHour >= 6 && currentHour < 18 ? "sound/morning.mp3" : "sound/night.mp3";
     audio.loop = true;
-  }, [currentHour]);
+
+    return () => {
+      audio.pause();
+      window.removeEventListener("resize", updateSize);
+    };
+  }, [currentHour, audio]);
 
   const toggleSound = () => {
-    if (isPlaying) {
-      audio.pause();
-    } else {
-      audio.play();
-    }
+    isPlaying ? audio.pause() : audio.play();
     setIsPlaying(!isPlaying);
   };
 
@@ -83,9 +82,9 @@ const CuteCat: React.FC = () => {
       transition: {
         duration: 2,
         repeat: Infinity,
-        ease: "easeInOut"
-      }
-    }
+        ease: "easeInOut",
+      },
+    },
   };
 
   return (
@@ -101,8 +100,8 @@ const CuteCat: React.FC = () => {
       dragConstraints={{
         top: 0,
         left: 0,
-        right: window.innerWidth - 60,
-        bottom: window.innerHeight - 60
+        right: screenSize.width - 60,
+        bottom: screenSize.height - 60,
       }}
     >
       <CatImage src="img/cat.png" alt="Cute Cat" />
@@ -115,10 +114,10 @@ const CuteCat: React.FC = () => {
           repeat: isPlaying ? Infinity : 0,
         }}
       >
-        {isPlaying ? '🔊' : '🔈'}
+        {isPlaying ? "🔊" : "🔈"}
       </SoundIcon>
     </CatContainer>
   );
 };
 
-export default CuteCat; 
+export default CuteCat;

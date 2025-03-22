@@ -104,21 +104,24 @@ const About: React.FC = () => {
   const { t } = useLanguage();
 
   const programmingImages = [
-    '/images/programming1.jpg',
-    '/images/programming2.jpg',
-    '/images/programming3.jpg'
+    'img/side/code/code1.png',
+    'img/side/code/code2.png',
+    'img/side/code/code1.png'
   ];
 
   const teachingImages = [
-    '/images/teaching1.jpg',
-    '/images/teaching2.jpg',
-    '/images/teaching3.jpg'
+    'img/side/mentor/mentor1.png',
+    'img/side/mentor/mentor2.png',
+    'img/side/mentor/mentor3.png',
+    'img/side/mentor/mentor4.png'
+
+
   ];
 
   const leathercraftImages = [
-    '/images/leathercraft1.jpg',
-    '/images/leathercraft2.jpg',
-    '/images/leathercraft3.jpg'
+    'img/side/artisan/pochette.jpg',
+    'img/side/artisan/wallet.jpg',
+    'img/side/artisan/kelly_mini.jpg',
   ];
 
   return (
